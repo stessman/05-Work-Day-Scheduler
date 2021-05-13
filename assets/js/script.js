@@ -1,4 +1,3 @@
-//let todaysDateArea = $('#currentDay');
 let todaysDateArea = document.querySelector("#currentDay");
 let DateTime = luxon.DateTime;
 let dt = DateTime.now();
@@ -9,7 +8,7 @@ let allTextareas = document.querySelectorAll(".description");
 
 container.addEventListener("click", saveTextAreaToLocalStorage);
 
-// Sets a timer for ever half second to update the information on the page
+// Sets a timer for every half second to update the information on the page
 var textareaInterval = window.setInterval(updatePage, 500);
 
 // Function to update the information on the page every half second
@@ -72,7 +71,3 @@ function populateTextAreas () {
 displayTodaysDate();
 setTextAreaColors();
 populateTextAreas();
-
-    //why does jquery not work
-    //how does onload work
-    //Hours should be on schedule? 9-5?
